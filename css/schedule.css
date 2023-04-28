@@ -1,0 +1,77 @@
+.schedule{
+    background-color: var(--dark-background);
+    padding: 4vw 0;
+}
+
+.schedule--title{
+    font-family: 'Race Sport', sans-serif;
+    font-weight: 400;
+    font-size: 6.37vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.schedule--tagline{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: -2vw;
+    margin-bottom: 4vw;
+}
+
+.schedule--table{
+    width: 28.53vw;
+    height: 18.46vw;
+    margin: 0 auto;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 1.85vw;
+    
+    color: var(--text-color);
+    border-collapse: collapse;
+}
+
+.schedule--table td{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.schedule--table tr:last-child td{
+    border: none;
+}
+
+.schedule--table tr td:nth-child(2){
+    text-align: right;
+}
+
+.schedule--indication{
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.schedule--social-media{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.schedule--social-media a{
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.schedule--phone-number{
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+.banner{ position: relative; }
+
+.banner--image{ width: 100%; }
+
+.banner--title{
+    top: 140px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    
+    font-size: 6.3vw;
+    font-weight: 400;
+    font-family: 'Race Sport', sans-serif;
+    
+    color: var(--text-color);
+    text-shadow: 0px 0px 20px var(--red);
+}
+
+.banner--tagline{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-left: -.29vw;
+    top: calc(140px + 5.5vw);
+    
+    font-weight: 400;
+    font-size: 1.97vw;
+    font-style: normal;
+    font-family: 'Race Sport', sans-serif;
+    
+    color: var(--text-color);
+    text-shadow: 0px 0px 14px var(--blue);
+}
+
+.banner--tagline span{ color: var(--blue); }
+
+.banner--cta{
+    width: 100%;
+    bottom: 18.52vw;
+    position: absolute;
+    text-align: center;
+    
+    font-size: 1.39vw;
+    font-size: clamp(16px, 1.39vw, 18px);
+    font-family: 'Inter', sans-serif;
+    
+    color: var(--text-color);
+}
+
+.banner--scroll-icon{
+    width: 3.13vw;
+    height: 1.5vw;
+    bottom: 15.34vw;
+    position: absolute;
+    left: calc(50% - 4.13vw/2);
+
+    border: 1vw solid transparent;
+}
+
+/*------------------------------------------------------------*\
+    academy
+\*------------------------------------------------------------*/
+.academy--banner--tagline{
+    position: absolute;
+    margin-left: 55vw;
+    top: calc(140px + 6vw);
+    transform: rotate(-15deg);
+    
+    font-weight: 400;
+    font-size: 2.97vw;
+    font-style: normal;
+    font-family: 'Race Sport', sans-serif;
+    
+    color: var(--text-color);
+    text-shadow: 0px 0px 14px var(--yellow);
+}

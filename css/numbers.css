@@ -1,0 +1,32 @@
+.numbers{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 40vw;
+    background-image: url("../img/tire track.png");
+    background-size: 200%;
+    background-position: 80% center;
+}
+
+.numbers div{
+    width: 9.72vw;
+    height: 10.42vw;
+    background-color: red;
+}
+
+.numbers div:nth-child(1){
+    margin-top: 10vw;
+}
+
+.numbers div:nth-child(2){
+    margin-top: 12vw;
+}
+
+.numbers div:nth-child(3){
+    margin-top: 16vw;
+}
+
+.numbers div:nth-child(4){
+    margin-top: 19vw;
+}

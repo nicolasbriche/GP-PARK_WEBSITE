@@ -1,0 +1,21 @@
+.pictures{
+    padding: 4vw 0;
+}
+
+.pictures--title{
+    font-family: 'Race Sport', sans-serif;
+    font-weight: 400;
+    font-size: 6.37vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.pictures--tagline{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: -2vw;
+    margin-bottom: 4vw;
+}

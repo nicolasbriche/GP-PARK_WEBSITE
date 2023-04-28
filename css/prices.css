@@ -1,0 +1,203 @@
+.prices--title{
+    font-family: 'Race Sport', sans-serif;
+    font-weight: 400;
+    font-size: 6.37vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.prices--tagline{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: -2vw;
+}
+
+.prices--cards-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 4vw 0;
+}
+
+.prices--card{
+    width: 18.23vw;
+    height: 46.12vw;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.card--title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.99vw;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 1.85vw;
+}
+
+.card--explication{
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.93vw;
+    text-align: center;
+    color: #A7A7AD;
+}
+
+.card--price{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    
+    color: var(--text-color);
+    justify-content: center;
+    margin: .93vw 0;
+}
+
+.card--price p:nth-child(1), .card--price p:nth-child(3){
+    font-weight: 400;
+    font-size: .93vw;
+}
+
+.card--price p:nth-child(1){
+    margin-right: .5vw;
+}
+
+.card--price p:nth-child(2){
+    font-size: 4.34vw;
+    line-height: 4.34vw;
+}
+
+.card--price p:nth-child(3){
+    align-self: flex-end;
+    margin-bottom: .5vw;
+    margin-left: .5vw;
+}
+
+.card--driving-licence{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.56vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.card--button{
+    width: 8.39vw;
+    height: 2.89vw;
+    
+    background: var(--background);
+    border-radius: 25px;
+    border: none;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 1.27vw;
+    text-align: center;
+    
+    color: var(--text-color);
+    margin-left: 4.92vw;
+    margin-top: 1.16vw;
+}
+
+.card--table{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.27vw;
+    
+    color: var(--text-color);
+    border-collapse: collapse;
+    
+    width: 80%;
+    margin: 2vw auto 4.6vw auto;
+}
+
+.card--table td{
+    border-bottom: 1px solid var(--text-color);
+}
+
+.card--table td:last-child{
+    text-align: right;
+}
+
+.card--table tr:last-child td{
+    border: none;
+}
+
+.card--table-caption{
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: .64vw;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #A7A7AD;
+}
+
+.card--include{
+    width: 80%;
+    margin: 0 auto;
+    
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: .94vw;
+    
+    color: var(--text-color);
+    list-style: none;
+    margin-bottom: 2.31vw;
+}
+
+.card--include li{
+    position: relative;
+    margin-left: 1.2vw;
+}
+
+.card--include li::before{
+    content: "";
+    position: absolute;
+    top: .2vw;
+    left: -1.2vw;
+    background-image: url(../img/include.svg);
+    background-size: 1vw;
+    background-repeat: no-repeat;
+    width: 1vw;
+    height: 1vw;
+}
+
+.card--location{
+    
+    font-family: 'Inter', sans-serif;
+    font-size: .94vw;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+    color: var(--text-color);
+
+    border-top: 1px solid var(--text-color);
+    padding-top: 1vw;
+}
+
+.prices--card:nth-child(4) .card--driving-licence{
+    margin-top: .6vw;
+}
+
+.prices--card:nth-child(3) .card--table{
+    margin-bottom: 3vw;
+}
+
+.prices--card:nth-child(4) .card--table{
+    margin-bottom: 0;
+}
+
+.prices--card:nth-child(4) .card--table-caption{
+    margin-bottom: .5vw;
+}

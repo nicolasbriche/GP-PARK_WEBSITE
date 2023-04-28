@@ -1,0 +1,21 @@
+@import url(base.css);
+@import url(header.css);
+@import url(banner.css);
+@import url(presentation.css);
+@import url(numbers.css);
+@import url(prices.css);
+@import url(schedule.css);
+@import url(pictures.css);
+@import url(contact.css);
+@import url(footer.css);
+@import url(layers.css);
+@import url(choice.css);
+
+:root{
+    --background: #201F2F;
+    --dark-background: #171622;
+    --red: #E32527;
+    --blue: #36B0E0;
+    --yellow: #EDFF00;
+    --text-color: aliceblue;
+}

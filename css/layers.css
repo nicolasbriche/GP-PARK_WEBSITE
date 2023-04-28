@@ -1,0 +1,6 @@
+.header--burger-icon{ z-index: 4; }
+header{ z-index: 3; }
+.banner{ z-index: 2; }
+.numbers{ z-index: 2; }
+.presentation--image{ z-index: 1; }
+.presentation--texte{ z-index: 1; }

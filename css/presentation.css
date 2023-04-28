@@ -1,0 +1,60 @@
+.presentation{
+    position: relative;
+    background-color: var(--background);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.presentation--image{
+    width: 41.26vw;
+}
+
+.presentation--texte{
+    width: 38.86vw;
+    margin: auto 0;
+    padding: 2vw 2.31vw;
+    box-sizing: border-box;
+    
+    font-size: 1.33vw;
+    text-align: justify;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
+}
+
+.presentation--texte span{
+    font-size: 2vw;
+    display: block;
+    margin-top: 2.9vw;
+    text-align: center;
+}
+
+.presentation--red-circle{
+    position: absolute;
+    width: 28.36vw;
+    height: 23.67vw;
+    left: 28.36vw;
+    top: -2vw;
+    border-radius: 50%;
+    
+    background: var(--red);
+    opacity: .58;
+    filter: blur(5.79vw);
+}
+
+.presentation--blue-circle{
+    position: absolute;
+    width: 34.49vw;
+    height: 34.49vw;
+    left: 14.47vw;
+    top: 14vw;
+    border-radius: 50%;
+    
+    background: var(--blue);
+    filter: blur(14.47vw);
+}

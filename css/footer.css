@@ -1,0 +1,25 @@
+footer{
+    height: 120px;
+    padding-top: 50px;
+}
+
+.footer--social-media{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.footer--social-media a:hover svg{
+    width: 60px;
+    height: 60px;
+}
+
+.footer--social-media svg{
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 10px #E22629);
+}
+
+.footer--social-media svg path{
+    box-shadow: 0px 0px 20px #E22629, inset 0px 0px 14px #E32628;
+}

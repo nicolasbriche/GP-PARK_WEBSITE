@@ -1,0 +1,33 @@
+.choice{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.loisir, .academy{
+    flex-grow: 1;
+    overflow: visible;
+}
+
+.loisir{
+    background-image: url(../img/loisir.png);
+    background-size: auto 100%;
+    background-position: left center;
+}
+.academy{
+    background-image: url(../img/academy.png);
+    background-size: auto 100%;
+    background-position: right center;
+}
+
+@media (orientation: landscape){
+    .choice{
+        flex-flow: row nowrap;
+    }
+}
+
+@media (orientation: portrait){
+    .choice{
+        flex-direction: column;
+    }
+}
