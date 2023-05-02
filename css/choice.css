@@ -7,7 +7,21 @@
 
 .choice a{
     z-index: 10;
-    position: relative;
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+
+    text-align: center;
+    
+    font-size: 6.3vw;
+    font-weight: 400;
+    font-family: 'Race Sport', sans-serif;
+    
+    color: var(--text-color);
+    text-shadow: 0px 0px 20px var(--red);
+    text-decoration: none;
+    padding-top: 50vh;
+    line-height: 0;
 }
 
 .loisir, .academy{
@@ -20,6 +34,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    filter: grayscale(1);
+    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .academy img{
@@ -27,6 +43,16 @@
     position: absolute;
     top: 0;
     right: 0;
+    filter: grayscale(10);
+    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.academy a:hover + img{
+    filter: grayscale(0);
+}
+
+.loisir a:hover + img{
+    filter: grayscale(0);
 }
 
 
