@@ -1,9 +1,19 @@
 .partners{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     padding: 25px 50px;
     background-color: var(--dark-background);
+}
+
+.partners--title{
+    font-family: 'Race Sport', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 6.37vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
 }
 
 .partners img{

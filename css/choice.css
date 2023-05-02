@@ -2,6 +2,12 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    background: linear-gradient(45deg, var(--blue) 0%, var(--background) 40%, var(--dark-background) 50%, var(--background) 60%, var(--red) 100%);
+}
+
+.choice a{
+    z-index: 10;
+    position: relative;
 }
 
 .loisir, .academy{
@@ -9,7 +15,23 @@
     overflow: visible;
 }
 
-.loisir{
+.loisir img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.academy img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+/* .loisir{
     background-image: url(../img/loisir.png);
     background-size: auto 100%;
     background-position: left center;
@@ -18,7 +40,7 @@
     background-image: url(../img/academy.png);
     background-size: auto 100%;
     background-position: right center;
-}
+} */
 
 @media (orientation: landscape){
     .choice{
