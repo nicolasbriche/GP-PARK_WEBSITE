@@ -323,3 +323,21 @@
 .prices--card:nth-child(4) .card--table-caption{
     margin-bottom: .5vw;
 }
+
+@media screen and (max-width: 1024px){
+    .prices--cards-row{
+        flex-flow: row wrap;
+    }
+
+    .prices--card:nth-child(1), .prices--card:nth-child(3){
+        margin-left: 18vw;
+    }
+
+    .prices--card:nth-child(2), .prices--card:nth-child(4){
+        margin-right: 18vw;
+    }
+
+    .prices--card:nth-child(1), .prices--card:nth-child(2){
+        margin-bottom: 25px;
+    }
+}
