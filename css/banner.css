@@ -41,7 +41,8 @@
     text-align: center;
     
     font-size: 1.39vw;
-    font-size: clamp(16px, 1.39vw, 18px);
+    /* font-size: clamp(16px, 1.39vw, 18px); */
+    font-size: 1.39vw;
     font-family: 'Inter', sans-serif;
     
     color: var(--text-color);
@@ -73,4 +74,18 @@
     
     color: var(--text-color);
     text-shadow: 0px 0px 14px var(--yellow);
+}
+
+@media screen and (max-width: 1024px){
+    .banner--title{
+        top: 100px;
+    }
+
+    .banner--tagline{
+        top: calc(100px + 5.5vw);
+    }
+
+    .academy--banner--tagline{
+        top: calc(100px + 6vw);
+    }
 }

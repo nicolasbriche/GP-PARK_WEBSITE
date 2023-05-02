@@ -98,6 +98,15 @@ header{
 
 
 @media screen and (max-width: 1024px){
+    header{
+        height: 80px;
+        padding: 0 25px;
+    }
+
+    .header--logo{
+        height: 50px;
+    }
+
     .header--menu{
         display: none;
     }
