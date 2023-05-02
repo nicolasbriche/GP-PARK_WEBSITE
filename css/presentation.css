@@ -21,7 +21,7 @@
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     
-    border-radius: 16px;
+    border-radius: 1vw;
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
@@ -82,4 +82,28 @@
     
     background: var(--yellow);
     filter: blur(5.79vw);
+}
+
+@media screen and (max-width: 1024px){
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation--image{
+        width: 71.26vw;
+    }
+
+    .presentation--texte{
+        width: 68.86vw;
+        padding: 2vw 2.31vw;
+        
+        font-size: 2.33vw;
+    }
+    
+    .presentation--texte span{
+        font-size: 3vw;
+        margin-top: 2.9vw;
+    }
 }

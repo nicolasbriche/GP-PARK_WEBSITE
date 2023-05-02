@@ -22,14 +22,15 @@ footer{
 }
 
 .footer--social-media a:hover svg{
-    width: 60px;
-    height: 60px;
+    width: 5.47vw;
+    height: 5.47vw;
 }
 
 .footer--social-media svg{
-    width: 50px;
-    height: 50px;
+    width: 4.9vw;
+    height: 4.9vw;
     overflow: visible;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .footer--social-media .shadow{
@@ -78,4 +79,26 @@ footer{
 
 footer a:hover{
     color: var(--blue);
+}
+
+@media screen and (max-width: 1024px){
+    footer{
+        padding: 50px 25px;
+        flex-flow: row wrap;
+    }
+
+    .footer--social-media{
+        padding: 0 35vw;
+        margin-bottom: 5vw;
+    }
+
+    .footer--nav{
+        margin-left: 25vw;
+        padding-bottom: 50px;
+    }
+
+    .footer--resources{
+        margin-right: 25vw;
+        margin-bottom: 50px;
+    }
 }
