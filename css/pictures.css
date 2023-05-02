@@ -1,5 +1,7 @@
 .pictures{
     padding: 4vw 0;
+    background-color: var(--background);
+    position: relative;
 }
 
 .pictures--title{
@@ -18,4 +20,24 @@
     color: var(--text-color);
     margin-top: -2vw;
     margin-bottom: 4vw;
+}
+
+.pictures--gallery{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 25px;
+}
+
+.pictures--gallery div{
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+}
+
+.pictures--gallery div img{
+    height: 100%;
 }

@@ -1,12 +1,24 @@
 footer{
     height: 120px;
-    padding-top: 50px;
+    padding: 50px 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-.footer--social-media{
+.footer--social-media p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.74vw;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.footer--social-media ul{
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
+    justify-content: space-between;
+    margin-top: 1vw;
 }
 
 .footer--social-media a:hover svg{
@@ -17,9 +29,53 @@ footer{
 .footer--social-media svg{
     width: 50px;
     height: 50px;
-    filter: drop-shadow(0px 0px 10px #E22629);
+    overflow: visible;
 }
 
-.footer--social-media svg path{
-    box-shadow: 0px 0px 20px #E22629, inset 0px 0px 14px #E32628;
+.footer--social-media .shadow{
+    filter: drop-shadow(0px 0px 10px var(--blue));
+}
+
+.footer--social-media .blur{
+    filter: blur(3px);
+}
+
+.footer--nav p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.footer--nav ul{
+    list-style: none;
+}
+
+.footer--nav a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4vw;
+    color: var(--text-color);
+}
+
+.footer--resources p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.footer--resources ul{
+    list-style: none;
+}
+
+.footer--resources a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4vw;
+    color: var(--text-color);
+}
+
+footer a:hover{
+    color: var(--blue);
 }

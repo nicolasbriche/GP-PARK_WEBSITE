@@ -1,3 +1,43 @@
+.prices{
+    position: relative;
+}
+
+.prices--blue-circle{
+    position: absolute;
+    width: 42.24vw;
+    height: 31.12vw;
+    left: 40vw;
+    top: 11.92vw;
+    
+    background: rgba(54, 176, 224, 0.69);
+    filter: blur(500px);
+    opacity: .5;
+}
+
+.prices--yellow-circle{
+    position: absolute;
+    width: 42.24vw;
+    height: 31.12vw;
+    left: 40vw;
+    top: 11.92vw;
+    
+    background: var(--yellow);
+    filter: blur(500px);
+    opacity: .2;
+}
+
+.prices--red-circle{
+    position: absolute;
+    width: 42.26vw;
+    height: 31.12vw;
+    left: 17.25vw;
+    top: 26.39vw;
+    
+    background: rgba(255, 0, 0, 0.29);
+    filter: blur(500px);
+    opacity: .8;
+}
+
 .prices--title{
     font-family: 'Race Sport', sans-serif;
     font-weight: 400;
@@ -31,6 +71,19 @@
     border-radius: 10px;
 }
 
+.prices--card:nth-child(1) td, .prices--card:nth-child(2) td, .prices--card:nth-child(3) td{
+    padding: .12vw 0;
+}
+
+.prices--card-academy{
+    width: 23vw;
+    height: 50.12vw;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
 .card--title{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -40,6 +93,10 @@
     margin-top: 1.85vw;
 }
 
+.prices--card-academy .card--title{
+    font-size: 2.5vw;
+}
+
 .card--explication{
     font-family: 'Inter', sans-serif;
     font-style: italic;
@@ -47,6 +104,14 @@
     font-size: 0.93vw;
     text-align: center;
     color: #A7A7AD;
+}
+
+.prices--card:nth-child(4) .card--explication{
+    padding: 0 .8vw;
+}
+
+.prices--card-academy .card--explication{
+    font-size: 1.2vw;
 }
 
 .card--price{
@@ -66,6 +131,10 @@
     font-size: .93vw;
 }
 
+.prices--card-academy .card--price p:nth-child(1), .prices--card-academy .card--price p:nth-child(3){
+    font-size: 1.5vw;
+}
+
 .card--price p:nth-child(1){
     margin-right: .5vw;
 }
@@ -73,6 +142,11 @@
 .card--price p:nth-child(2){
     font-size: 4.34vw;
     line-height: 4.34vw;
+}
+
+.prices--card-academy .card--price p:nth-child(2){
+    font-size: 4.94vw;
+    line-height: 4.94vw;
 }
 
 .card--price p:nth-child(3){
@@ -90,21 +164,55 @@
     color: var(--blue);
 }
 
+.prices--card-academy .card--driving-licence{
+    font-size: 2.1vw;
+    color: var(--yellow);
+}
+
 .card--button{
     width: 8.39vw;
     height: 2.89vw;
     
     background: var(--background);
-    border-radius: 25px;
+    border-radius: 3vw;
     border: none;
     
     font-family: 'Inter', sans-serif;
     font-size: 1.27vw;
+    font-weight: 200;
     text-align: center;
     
     color: var(--text-color);
     margin-left: 4.92vw;
     margin-top: 1.16vw;
+    transition: 0.5s ease;
+}
+
+.card--button:hover{
+    cursor: pointer;
+    text-shadow: 0 0 5px var(--text-color),
+    0 0 10px var(--text-color),
+    0 0 20px var(--text-color);
+    
+    box-shadow: 0 0 5px black,
+    0 0 20px var(--blue),
+    0 0 50px var(--blue),
+    0 0 100px var(--blue);
+}
+
+.prices--card-academy .card--button:hover{
+    box-shadow: 0 0 5px black,
+    0 0 20px var(--yellow),
+    0 0 50px var(--yellow),
+    0 0 100px var(--yellow);
+}
+
+.prices--card-academy .card--button{
+    width: 12.5vw;
+    height: 4vw;
+    
+    font-size: 1.87vw;
+    margin-left: 5.25vw;
 }
 
 .card--table{
@@ -116,6 +224,11 @@
     
     width: 80%;
     margin: 2vw auto 4.6vw auto;
+}
+
+.prices--card-academy .card--table{
+    margin: 2vw auto;
+    font-size: 1.5vw;
 }
 
 .card--table td{
@@ -154,6 +267,10 @@
     margin-bottom: 2.31vw;
 }
 
+.prices--card-academy .card--include{
+    font-size: 1.1vw;
+}
+
 .card--include li{
     position: relative;
     margin-left: 1.2vw;
@@ -181,9 +298,14 @@
     text-align: center;
     
     color: var(--text-color);
-
+    
     border-top: 1px solid var(--text-color);
     padding-top: 1vw;
+    justify-content: center;
+}
+
+.prices--card-academy .card--location{
+    font-size: 1.1vw;
 }
 
 .prices--card:nth-child(4) .card--driving-licence{

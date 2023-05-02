@@ -1,6 +1,7 @@
 .schedule{
     background-color: var(--dark-background);
     padding: 4vw 0;
+    position: relative;
 }
 
 .schedule--title{

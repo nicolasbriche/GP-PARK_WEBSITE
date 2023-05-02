@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
     <title>GP Park - Loisir</title>
     
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
+    
     <script src="js/script.js"></script>
 </head>
 
@@ -23,11 +24,11 @@
         
         <nav class="header--menu">
             <ul>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Tarifs</a></li>
-                <li><a href="#">Horaires</a></li>
-                <li><a href="#">Médias</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="header-menu--item" href="#presentation">Présentation</a></li>
+                <li><a class="header-menu--item" href="#prices">Tarifs</a></li>
+                <li><a class="header-menu--item" href="#schedule">Horaires</a></li>
+                <li><a class="header-menu--item" href="#pictures">Médias</a></li>
+                <li><a class="header-menu--item" href="#contact">Contact</a></li>
             </ul>
         </nav>
         
@@ -46,15 +47,15 @@
             <h1 class="banner--title">GP PARK</h1>
             <h2 class="banner--tagline">Dans la peau d'un <span>pilote</span></h2>
             <p class="banner--cta">Venez découvrir une expérience unique dans les hauts de France !</p>
-            <a href="#" class="banner--scroll-icon">
+            <a href="#presentation" class="banner--scroll-icon">
                 <svg viewBox="0 0 54 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27 26.7819C24.8194 26.7819 22.6388 25.9408 20.9878 24.2898L0.677532 3.97953C-0.225844 3.07615 -0.225844 1.58091 0.677532 0.677532C1.58091 -0.225844 3.07615 -0.225844 3.97953 0.677532L24.2898 20.9878C25.7851 22.483 28.2148 22.483 29.7101 20.9878L50.0205 0.677532C50.9239 -0.225844 52.4191 -0.225844 53.3225 0.677532C54.2258 1.58091 54.2258 3.07615 53.3225 3.97953L33.0121 24.2898C31.3611 25.9408 29.1805 26.7819 27 26.7819Z" fill="white"/>
                 </svg>
             </a>
         </section>
         
-        <section class="presentation">
-            <img src="img/moto.png" alt="mini moto" class="presentation--image">
+        <section class="presentation" id="presentation">
+            <img src="img/moto2.png" alt="mini moto" class="presentation--image">
             <p class="presentation--texte">
                 Vous cherchez une expérience de conduite excitante et mémorable ? Venez découvrir notre circuit de mini-motos uniques dans les Hauts-de-France ! Notre piste homologuée FFM offre des défis passionnants pour les débutants comme pour les pilotes expérimentés. Vous serez aux commandes de mini-motos puissantes et maniables, encadré par une équipe de professionnels dévoués qui veilleront à votre sécurité et à votre plaisir. Que vous soyez un groupe d’amis en quête de sensations fortes ou une entreprise cherchant à organiser un événement de team building original, notre circuit est l’endroit idéal pour vous.<br>Venez nous rejoindre et vivez une expérience de pilotage incomparable !<br><span>PERMIS MOTO NON OBLIGATOIRE</span>
             </p>
@@ -63,13 +64,75 @@
         </section>
         
         <section class="numbers">
-            <div class="numbers--circuit"></div>
-            <div class="numbers--permis"></div>
-            <div class="numbers--motorbike"></div>
-            <div class="numbers--age"></div>
+            <div class="numbers--circuit">
+                <div class="numbers--icon">
+                    <svg fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M435.201,251.734c-11.887,0-23.108,2.799-33.169,7.637l-31.377-50.202c7.671-6.477,22.46-16.495,41.6-17.579
+                        c20.002-1.092,39.996,7.526,59.853,25.668c3.482,3.174,8.875,2.935,12.058-0.546c3.174-3.482,2.935-8.875-0.538-12.058
+                        c-23.475-21.444-47.957-31.565-72.567-30.089c-22.477,1.34-39.731,12.066-49.553,19.959l-47.07-75.315
+                        c-1.562-2.492-4.292-4.011-7.236-4.011h-17.067c0-4.71-3.814-8.533-8.533-8.533c-4.719,0-8.533,3.823-8.533,8.533h-8.533
+                        c-4.719,0-8.533,3.823-8.533,8.533c0,4.71,3.814,8.533,8.533,8.533h8.533c0,4.71,3.814,8.533,8.533,8.533
+                        c4.719,0,8.533-3.823,8.533-8.533h12.331l13.918,22.272l-4.983,9.958l-18.577-6.195c-1.468-0.495-3.038-0.58-4.548-0.23
+                        l-75.537,16.785L9.243,157.893c-3.652-0.307-6.938,1.673-8.448,4.915c-1.51,3.251-0.828,7.091,1.707,9.626l34.133,34.133
+                        c1.604,1.604,3.772,2.5,6.033,2.5h11.793l-2.355,4.719c-1.143,2.287-1.203,4.966-0.162,7.296c1.041,2.33,3.081,4.079,5.547,4.753
+                        l89.651,24.448l20.429,54.468l-16.947,2.825c-9.148-32.179-38.741-55.842-73.822-55.842c-42.351,0-76.8,34.458-76.8,76.8
+                        s34.449,76.8,76.8,76.8c42.351,0,76.8-34.458,76.8-76.8c0-1.391-0.137-2.739-0.205-4.113l26.513-4.42h118.758
+                        c3.806,0,7.159-2.526,8.209-6.187l16.461-57.609l34.816-34.85l29.406,47.053c-17.732,14.08-29.158,35.78-29.158,60.126
+                        c0,42.342,34.449,76.8,76.8,76.8s76.8-34.458,76.8-76.8S477.552,251.734,435.201,251.734z M76.801,388.267
+                        c-32.93,0-59.733-26.795-59.733-59.733s26.803-59.733,59.733-59.733c26.615,0,49.203,17.502,56.9,41.6l-58.3,9.719
+                        c-4.173,0.691-7.134,4.309-7.134,8.397c0,0.469,0.034,0.939,0.119,1.425c0.691,4.164,4.309,7.125,8.405,7.125
+                        c0.469,0,0.93-0.034,1.408-0.119l58.266-9.711c0.017,0.435,0.068,0.862,0.068,1.297
+                        C136.534,361.473,109.731,388.267,76.801,388.267z M309.701,245.701c-1.024,1.024-1.775,2.295-2.176,3.686l-15.292,53.547h-107.11
+                        l-23.526-62.729c-0.964-2.568-3.098-4.514-5.751-5.239l-83.814-22.861l3.874-7.757c1.323-2.645,1.186-5.786-0.375-8.303
+                        c-1.562-2.509-4.301-4.045-7.262-4.045H46.201l-15.155-15.164l181.581,15.13c0.87,0.094,1.732,0.017,2.56-0.179l74.487-16.555
+                        l23.356,7.791c4.028,1.34,8.422-0.478,10.334-4.275l3.627-7.245l21.888,35.021L309.701,245.701z M435.201,388.267
+                        c-32.93,0-59.733-26.795-59.733-59.733c0-18.253,8.252-34.594,21.197-45.559l31.3,50.082c1.613,2.594,4.403,4.011,7.245,4.011
+                        c1.545,0,3.106-0.418,4.514-1.297c3.994-2.5,5.205-7.765,2.705-11.759l-31.309-50.099c7.381-3.26,15.514-5.111,24.081-5.111
+                        c32.93,0,59.733,26.795,59.733,59.733S468.14,388.267,435.201,388.267z"/>
+                    </svg>
+                    <div class="numbers--description-icon">
+                        <p>Circuit de 450m avec reliefs<br> homologuée FFM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers--permis">
+                <div class="numbers--icon">
+                    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M182.52 146.2h585.14v402.28h73.15V73.06H109.38v877.71h402.36v-73.14H182.52z" fill="var(--text-color)" />
+                        <path d="M255.67 219.34h438.86v73.14H255.67zM255.67 365.63h365.71v73.14H255.67zM255.67 511.91H475.1v73.14H255.67zM731.17 584.97c-100.99 0-182.86 81.87-182.86 182.86s81.87 182.86 182.86 182.86c100.99 0 182.86-81.87 182.86-182.86s-81.87-182.86-182.86-182.86z m0 292.57c-60.5 0-109.71-49.22-109.71-109.71 0-60.5 49.22-109.71 109.71-109.71 60.5 0 109.71 49.22 109.71 109.71 0.01 60.49-49.21 109.71-109.71 109.71z" fill="var(--text-color)" />
+                        <path d="M777.43 686.4l-46.26 46.25-46.26-46.25-38.78 38.78 46.26 46.26-46.26 46.26 38.78 38.78 46.26-46.25 46.26 46.25 38.79-38.78-46.26-46.26 46.26-46.26z" fill="var(--text-color)" />
+                    </svg>
+                    <div class="numbers--description-icon">
+                        <p>Permis non obligatoire</p>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers--motorbike">
+                <div class="numbers--icon">
+                    <svg fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M435.201,251.734c-11.887,0-23.108,2.799-33.169,7.637l-31.377-50.202c7.671-6.477,22.46-16.495,41.6-17.579 c20.002-1.092,39.996,7.526,59.853,25.668c3.482,3.174,8.875,2.935,12.058-0.546c3.174-3.482,2.935-8.875-0.538-12.058 c-23.475-21.444-47.957-31.565-72.567-30.089c-22.477,1.34-39.731,12.066-49.553,19.959l-47.07-75.315 c-1.562-2.492-4.292-4.011-7.236-4.011h-17.067c0-4.71-3.814-8.533-8.533-8.533c-4.719,0-8.533,3.823-8.533,8.533h-8.533 c-4.719,0-8.533,3.823-8.533,8.533c0,4.71,3.814,8.533,8.533,8.533h8.533c0,4.71,3.814,8.533,8.533,8.533 c4.719,0,8.533-3.823,8.533-8.533h12.331l13.918,22.272l-4.983,9.958l-18.577-6.195c-1.468-0.495-3.038-0.58-4.548-0.23 l-75.537,16.785L9.243,157.893c-3.652-0.307-6.938,1.673-8.448,4.915c-1.51,3.251-0.828,7.091,1.707,9.626l34.133,34.133 c1.604,1.604,3.772,2.5,6.033,2.5h11.793l-2.355,4.719c-1.143,2.287-1.203,4.966-0.162,7.296c1.041,2.33,3.081,4.079,5.547,4.753 l89.651,24.448l20.429,54.468l-16.947,2.825c-9.148-32.179-38.741-55.842-73.822-55.842c-42.351,0-76.8,34.458-76.8,76.8 s34.449,76.8,76.8,76.8c42.351,0,76.8-34.458,76.8-76.8c0-1.391-0.137-2.739-0.205-4.113l26.513-4.42h118.758 c3.806,0,7.159-2.526,8.209-6.187l16.461-57.609l34.816-34.85l29.406,47.053c-17.732,14.08-29.158,35.78-29.158,60.126 c0,42.342,34.449,76.8,76.8,76.8s76.8-34.458,76.8-76.8S477.552,251.734,435.201,251.734z M76.801,388.267 c-32.93,0-59.733-26.795-59.733-59.733s26.803-59.733,59.733-59.733c26.615,0,49.203,17.502,56.9,41.6l-58.3,9.719 c-4.173,0.691-7.134,4.309-7.134,8.397c0,0.469,0.034,0.939,0.119,1.425c0.691,4.164,4.309,7.125,8.405,7.125 c0.469,0,0.93-0.034,1.408-0.119l58.266-9.711c0.017,0.435,0.068,0.862,0.068,1.297 C136.534,361.473,109.731,388.267,76.801,388.267z M309.701,245.701c-1.024,1.024-1.775,2.295-2.176,3.686l-15.292,53.547h-107.11 l-23.526-62.729c-0.964-2.568-3.098-4.514-5.751-5.239l-83.814-22.861l3.874-7.757c1.323-2.645,1.186-5.786-0.375-8.303 c-1.562-2.509-4.301-4.045-7.262-4.045H46.201l-15.155-15.164l181.581,15.13c0.87,0.094,1.732,0.017,2.56-0.179l74.487-16.555 l23.356,7.791c4.028,1.34,8.422-0.478,10.334-4.275l3.627-7.245l21.888,35.021L309.701,245.701z M435.201,388.267 c-32.93,0-59.733-26.795-59.733-59.733c0-18.253,8.252-34.594,21.197-45.559l31.3,50.082c1.613,2.594,4.403,4.011,7.245,4.011 c1.545,0,3.106-0.418,4.514-1.297c3.994-2.5,5.205-7.765,2.705-11.759l-31.309-50.099c7.381-3.26,15.514-5.111,24.081-5.111 c32.93,0,59.733,26.795,59.733,59.733S468.14,388.267,435.201,388.267z"/>
+                    </svg>
+                    <div class="numbers--description-icon">
+                        <p>15 mini-motos <br> 88 YCF</p>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers--age">
+                <div class="numbers--icon">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        <path d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    <div class="numbers--description-icon">
+                        <p>À partir de 12 ans</p>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section class="prices">
+        <section class="prices" id="prices">
+            <div class="prices--blue-circle"></div>
+            <div class="prices--red-circle"></div>
             <h1 class="prices--title">tarifs</h1>
             <p class="prices--tagline">
                 Venez faire le plein de sensations fortes<br>sans jamais avoir à faire le plein d’essence !
@@ -84,7 +147,7 @@
                         <p> / sessions</p>
                     </div>
                     <p class="card--driving-licence">Permis moto non obligatoire</p>
-                    <button class="card--button">Réserver</button>
+                    <a href="#contact"><button class="card--button">Réserver</button></a>
                     <table class="card--table">
                         <tr>
                             <td>1 Session</td>
@@ -122,7 +185,7 @@
                         <p> / personnes</p>
                     </div>
                     <p class="card--driving-licence">Permis moto non obligatoire</p>
-                    <button class="card--button">Réserver</button>
+                    <a href="#contact"><button class="card--button">Réserver</button></a>
                     <table class="card--table">
                         <tr>
                             <td>Essai libre</td>
@@ -160,7 +223,7 @@
                         <p> / personnes</p>
                     </div>
                     <p class="card--driving-licence">Permis moto non obligatoire</p>
-                    <button class="card--button">Réserver</button>
+                    <a href="#contact"><button class="card--button">Réserver</button></a>
                     <table class="card--table">
                         <tr>
                             <td>Essai libre</td>
@@ -197,27 +260,27 @@
                     <h1 class="card--title">Évènements</h1>
                     <p class="card--explication">Nous organisons des évènements tout au long de l’année, n’hésitez pas à nous suivre sur les réseaux pour être au courant avant tous le monde ou à nous contacter pour des demandes spécifiques.</p>
                     <p class="card--driving-licence">Permis moto non obligatoire</p>
-                    <button class="card--button">Réserver</button>
+                    <a href="#contact"><button class="card--button">Réserver</button></a>
                     <table class="card--table">
                         <tr>
                             <td>EVJG</td>
-                            <td>1</td>
+                            <td><sup>1</sup></td>
                         </tr>
                         <tr>
                             <td>EVJF</td>
-                            <td>1</td>
+                            <td><sup>1</sup></td>
                         </tr>
                         <tr>
                             <td>Séminaire entreprise</td>
-                            <td>1</td>
+                            <td><sup>1</sup></td>
                         </tr>
                         <tr>
                             <td>Endurance 2H</td>
-                            <td>2</td>
+                            <td><sup>2</sup></td>
                         </tr>
                         <tr>
                             <td>Endurance 3H</td>
-                            <td>2</td>
+                            <td><sup>2</sup></td>
                         </tr>
                     </table>
                     <p class="card--table-caption">
@@ -234,9 +297,10 @@
                     </p>
                 </div>
             </div>
+            
         </section>
         
-        <section class="schedule">
+        <section class="schedule" id="schedule">
             <h1 class="schedule--title">Horaires</h1>
             <p class="schedule--tagline">
                 Chez nous, les heures de pointe ne sont jamais un problème.<br>Vous pourrez toujours rouler à fond la caisse sans vous soucier du trafic !
@@ -280,44 +344,154 @@
             <p class="schedule--phone-number">06 61 61 84 75<br>gppark@outlook.fr</p>
         </section>
         
-        <section class="pictures">
+        <section class="pictures" id="pictures">
             <h1 class="pictures--title">Médias</h1>
             <p class="pictures--tagline">
                 Prenez le temps de contempler nos magnifiques photos,<br>Au guidon de nos mini-motos vous n’aurez plus le temps de contempler le paysage !
             </p>
+            <div class="pictures--gallery">
+                <div class="gallery-first-row">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                </div>
+                <div class="gallery-second-row">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                </div>
+                <div class="gallery-third-row">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                    <img src="img/moto.png" alt="">
+                </div>
+            </div>
         </section>
         
-        <section class="contact">
+        <section class="contact" id="contact">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1075.832038275509!2d1.9367810131190002!3d50.53935193379515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ddb7bc1f81a16d%3A0xe94670c4520cbb6f!2sGpPark%20Circuit%20Mini%20motos%20Supermotard%20YCF!5e1!3m2!1sfr!2sfr!4v1682284176110!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact--details">
+                <h1 class="contact-details--title">CONTACTEZ NOUS</h1>
+                <p class="contact-details--description">
+                    Pour toute réservation ou renseignement supplémentaire, <br> Contactez moi au : <br> 06 61 61 84 75 <br> gppark@outlook.fr
+                </p>
+                <ul class="contact--social-media">
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <path class="shadow" stroke="var(--blue)" stroke-linecap="round" stroke-width="18" d="M96 170c40.869 0 74-33.131 74-74 0-40.87-33.131-74-74-74-40.87 0-74 33.13-74 74 0 40.869 33.13 74 74 74Zm0 0v-62m30-48h-10c-11.046 0-20 8.954-20 20v28m0 0H74m22 0h22"/>
+                                <path class="blur" stroke="var(--text-color)" stroke-linecap="round" stroke-width="10" d="M96 170c40.869 0 74-33.131 74-74 0-40.87-33.131-74-74-74-40.87 0-74 33.13-74 74 0 40.869 33.13 74 74 74Zm0 0v-62m30-48h-10c-11.046 0-20 8.954-20 20v28m0 0H74m22 0h22"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <path class="shadow" stroke="var(--blue)" stroke-width="18" d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"/>
+                                <circle class="shadow" cx="96" cy="96" r="30" stroke="var(--blue)" stroke-width="18"/>
+                                <circle class="shadow" cx="135" cy="57" r="9" fill="var(--blue)"/>
+                                <path class="blur" stroke="var(--text-color)" stroke-width="10" d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"/>
+                                <circle class="blur" cx="96" cy="96" r="30" stroke="var(--text-color)" stroke-width="10"/>
+                                <circle class="blur" cx="135" cy="57" r="6" fill="var(--text-color)"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <path class="shadow" stroke="var(--blue)" stroke-linejoin="round" stroke-width="18" d="M95.918 22.002c-11.963-.087-24.145 4.54-32.031 13.717-6.995 7.405-9.636 17.901-9.284 27.868-.03 5.119.032 10.237.05 15.355-4.901-1.217-9.873-4.624-15.063-2.937-4.422 1.313-6.267 7.088-3.596 10.791 2.876 3.761 7.346 5.907 11.08 8.71 1.837 1.5 4.313 2.571 5.68 4.499-.001 4.62-2.425 8.897-4.722 12.786-5.597 8.802-14.342 15.531-23.705 20.18-2.39 1.035-4.59 4.144-2.473 6.499 3.862 3.622 9.327 4.778 14.195 6.486 2.047.64 5.078 1.34 4.886 4.084.335 2.923 2.205 6.066 5.492 6.078 7.873.91 16.289.522 23.345 4.741 6.917 4.006 14.037 8.473 22.255 8.96 8.188.767 16.623-.888 23.642-5.255 5.23-2.884 10.328-6.477 16.456-7.061 5.155-1.206 10.702-.151 15.685-2.072 3.193-1.367 2.762-5.244 4.104-7.808 2.532-1.747 5.77-1.948 8.59-3.102 3.687-1.47 8.335-2.599 10.268-6.413 1.148-3.038-2.312-4.698-4.453-5.88-11.38-5.874-21.631-14.921-26.121-27.191-.496-1.936-2.279-4.834.084-6.255 4.953-4.176 11.413-6.575 15.514-11.715 3.103-3.884.941-10.55-4.141-11.322-4.928-.78-9.525 1.893-14.152 3.127-.404-8.53.502-17.232-.776-25.746-2.429-13.808-13.514-25.157-26.813-29.124-4.521-1.401-9.266-2.037-13.996-2Z"/>
+                                <path class="blur" stroke="var(--text-color)" stroke-linejoin="round" stroke-width="10" d="M95.918 22.002c-11.963-.087-24.145 4.54-32.031 13.717-6.995 7.405-9.636 17.901-9.284 27.868-.03 5.119.032 10.237.05 15.355-4.901-1.217-9.873-4.624-15.063-2.937-4.422 1.313-6.267 7.088-3.596 10.791 2.876 3.761 7.346 5.907 11.08 8.71 1.837 1.5 4.313 2.571 5.68 4.499-.001 4.62-2.425 8.897-4.722 12.786-5.597 8.802-14.342 15.531-23.705 20.18-2.39 1.035-4.59 4.144-2.473 6.499 3.862 3.622 9.327 4.778 14.195 6.486 2.047.64 5.078 1.34 4.886 4.084.335 2.923 2.205 6.066 5.492 6.078 7.873.91 16.289.522 23.345 4.741 6.917 4.006 14.037 8.473 22.255 8.96 8.188.767 16.623-.888 23.642-5.255 5.23-2.884 10.328-6.477 16.456-7.061 5.155-1.206 10.702-.151 15.685-2.072 3.193-1.367 2.762-5.244 4.104-7.808 2.532-1.747 5.77-1.948 8.59-3.102 3.687-1.47 8.335-2.599 10.268-6.413 1.148-3.038-2.312-4.698-4.453-5.88-11.38-5.874-21.631-14.921-26.121-27.191-.496-1.936-2.279-4.834.084-6.255 4.953-4.176 11.413-6.575 15.514-11.715 3.103-3.884.941-10.55-4.141-11.322-4.928-.78-9.525 1.893-14.152 3.127-.404-8.53.502-17.232-.776-25.746-2.429-13.808-13.514-25.157-26.813-29.124-4.521-1.401-9.266-2.037-13.996-2Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="partners">
+            <img src="img/facebook-icon.svg" alt="">
+            <img src="img/facebook-icon.svg" alt="">
+            <img src="img/facebook-icon.svg" alt="">
         </section>
     </main>
     
     <footer>
-        <ul class="footer--social-media">
-            <li>
-                <a href="#">
-                    <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path stroke="var(--text-color)" stroke-linecap="round" stroke-width="12" d="M96 170c40.869 0 74-33.131 74-74 0-40.87-33.131-74-74-74-40.87 0-74 33.13-74 74 0 40.869 33.13 74 74 74Zm0 0v-62m30-48h-10c-11.046 0-20 8.954-20 20v28m0 0H74m22 0h22"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path stroke="var(--text-color)" stroke-width="12" d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"/>
-                        <circle cx="96" cy="96" r="30" stroke="var(--text-color)" stroke-width="12"/>
-                        <circle cx="135" cy="57" r="9" fill="var(--text-color)"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path stroke="var(--text-color)" stroke-linejoin="round" stroke-width="12" d="M95.918 22.002c-11.963-.087-24.145 4.54-32.031 13.717-6.995 7.405-9.636 17.901-9.284 27.868-.03 5.119.032 10.237.05 15.355-4.901-1.217-9.873-4.624-15.063-2.937-4.422 1.313-6.267 7.088-3.596 10.791 2.876 3.761 7.346 5.907 11.08 8.71 1.837 1.5 4.313 2.571 5.68 4.499-.001 4.62-2.425 8.897-4.722 12.786-5.597 8.802-14.342 15.531-23.705 20.18-2.39 1.035-4.59 4.144-2.473 6.499 3.862 3.622 9.327 4.778 14.195 6.486 2.047.64 5.078 1.34 4.886 4.084.335 2.923 2.205 6.066 5.492 6.078 7.873.91 16.289.522 23.345 4.741 6.917 4.006 14.037 8.473 22.255 8.96 8.188.767 16.623-.888 23.642-5.255 5.23-2.884 10.328-6.477 16.456-7.061 5.155-1.206 10.702-.151 15.685-2.072 3.193-1.367 2.762-5.244 4.104-7.808 2.532-1.747 5.77-1.948 8.59-3.102 3.687-1.47 8.335-2.599 10.268-6.413 1.148-3.038-2.312-4.698-4.453-5.88-11.38-5.874-21.631-14.921-26.121-27.191-.496-1.936-2.279-4.834.084-6.255 4.953-4.176 11.413-6.575 15.514-11.715 3.103-3.884.941-10.55-4.141-11.322-4.928-.78-9.525 1.893-14.152 3.127-.404-8.53.502-17.232-.776-25.746-2.429-13.808-13.514-25.157-26.813-29.124-4.521-1.401-9.266-2.037-13.996-2Z"/>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+        <div class="footer--social-media">
+            <p>Pour ne rien manquer:</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path class="shadow" stroke="var(--blue)" stroke-linecap="round" stroke-width="18" d="M96 170c40.869 0 74-33.131 74-74 0-40.87-33.131-74-74-74-40.87 0-74 33.13-74 74 0 40.869 33.13 74 74 74Zm0 0v-62m30-48h-10c-11.046 0-20 8.954-20 20v28m0 0H74m22 0h22"/>
+                            <path class="blur" stroke="var(--text-color)" stroke-linecap="round" stroke-width="10" d="M96 170c40.869 0 74-33.131 74-74 0-40.87-33.131-74-74-74-40.87 0-74 33.13-74 74 0 40.869 33.13 74 74 74Zm0 0v-62m30-48h-10c-11.046 0-20 8.954-20 20v28m0 0H74m22 0h22"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path class="shadow" stroke="var(--blue)" stroke-width="18" d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"/>
+                            <circle class="shadow" cx="96" cy="96" r="30" stroke="var(--blue)" stroke-width="18"/>
+                            <circle class="shadow" cx="135" cy="57" r="9" fill="var(--blue)"/>
+                            <path class="blur" stroke="var(--text-color)" stroke-width="10" d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"/>
+                            <circle class="blur" cx="96" cy="96" r="30" stroke="var(--text-color)" stroke-width="10"/>
+                            <circle class="blur" cx="135" cy="57" r="6" fill="var(--text-color)"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path class="shadow" stroke="var(--blue)" stroke-linejoin="round" stroke-width="18" d="M95.918 22.002c-11.963-.087-24.145 4.54-32.031 13.717-6.995 7.405-9.636 17.901-9.284 27.868-.03 5.119.032 10.237.05 15.355-4.901-1.217-9.873-4.624-15.063-2.937-4.422 1.313-6.267 7.088-3.596 10.791 2.876 3.761 7.346 5.907 11.08 8.71 1.837 1.5 4.313 2.571 5.68 4.499-.001 4.62-2.425 8.897-4.722 12.786-5.597 8.802-14.342 15.531-23.705 20.18-2.39 1.035-4.59 4.144-2.473 6.499 3.862 3.622 9.327 4.778 14.195 6.486 2.047.64 5.078 1.34 4.886 4.084.335 2.923 2.205 6.066 5.492 6.078 7.873.91 16.289.522 23.345 4.741 6.917 4.006 14.037 8.473 22.255 8.96 8.188.767 16.623-.888 23.642-5.255 5.23-2.884 10.328-6.477 16.456-7.061 5.155-1.206 10.702-.151 15.685-2.072 3.193-1.367 2.762-5.244 4.104-7.808 2.532-1.747 5.77-1.948 8.59-3.102 3.687-1.47 8.335-2.599 10.268-6.413 1.148-3.038-2.312-4.698-4.453-5.88-11.38-5.874-21.631-14.921-26.121-27.191-.496-1.936-2.279-4.834.084-6.255 4.953-4.176 11.413-6.575 15.514-11.715 3.103-3.884.941-10.55-4.141-11.322-4.928-.78-9.525 1.893-14.152 3.127-.404-8.53.502-17.232-.776-25.746-2.429-13.808-13.514-25.157-26.813-29.124-4.521-1.401-9.266-2.037-13.996-2Z"/>
+                            <path class="blur" stroke="var(--text-color)" stroke-linejoin="round" stroke-width="10" d="M95.918 22.002c-11.963-.087-24.145 4.54-32.031 13.717-6.995 7.405-9.636 17.901-9.284 27.868-.03 5.119.032 10.237.05 15.355-4.901-1.217-9.873-4.624-15.063-2.937-4.422 1.313-6.267 7.088-3.596 10.791 2.876 3.761 7.346 5.907 11.08 8.71 1.837 1.5 4.313 2.571 5.68 4.499-.001 4.62-2.425 8.897-4.722 12.786-5.597 8.802-14.342 15.531-23.705 20.18-2.39 1.035-4.59 4.144-2.473 6.499 3.862 3.622 9.327 4.778 14.195 6.486 2.047.64 5.078 1.34 4.886 4.084.335 2.923 2.205 6.066 5.492 6.078 7.873.91 16.289.522 23.345 4.741 6.917 4.006 14.037 8.473 22.255 8.96 8.188.767 16.623-.888 23.642-5.255 5.23-2.884 10.328-6.477 16.456-7.061 5.155-1.206 10.702-.151 15.685-2.072 3.193-1.367 2.762-5.244 4.104-7.808 2.532-1.747 5.77-1.948 8.59-3.102 3.687-1.47 8.335-2.599 10.268-6.413 1.148-3.038-2.312-4.698-4.453-5.88-11.38-5.874-21.631-14.921-26.121-27.191-.496-1.936-2.279-4.834.084-6.255 4.953-4.176 11.413-6.575 15.514-11.715 3.103-3.884.941-10.55-4.141-11.322-4.928-.78-9.525 1.893-14.152 3.127-.404-8.53.502-17.232-.776-25.746-2.429-13.808-13.514-25.157-26.813-29.124-4.521-1.401-9.266-2.037-13.996-2Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer--nav">
+            <p>Plan du site:</p>
+            <ul>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="#">Horaires</a></li>
+                <li><a href="#">Médias</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer--resources">
+            <p>Ressources</p>
+            <ul>
+                <li><a href="#">Charge de non-résponsabilité</a></li>
+                <li><a href="#">Réglement intérieur</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

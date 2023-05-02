@@ -1,0 +1,12 @@
+.partners{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 25px 50px;
+    background-color: var(--dark-background);
+}
+
+.partners img{
+    height: 100px;
+    background-color: white;
+}

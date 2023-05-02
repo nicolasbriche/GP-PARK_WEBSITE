@@ -36,6 +36,24 @@ header{
     color: var(--text-color);
     text-decoration: none;
     padding: 5px 10px;
+    position: relative;
+}
+
+.header--menu a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header--menu a:hover::after{
+    width: calc(100% - 20px);
+    left: 10px;
 }
 
 .header--burger-icon{
@@ -95,7 +113,7 @@ header{
         top: 0;
         left: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, .9);
+        background: rgba(0, 0, 0, .8);
         backdrop-filter: blur(5px);
     }
     

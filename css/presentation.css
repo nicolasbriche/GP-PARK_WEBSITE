@@ -47,6 +47,19 @@
     filter: blur(5.79vw);
 }
 
+.presentation--academy--red-circle{
+    position: absolute;
+    width: 34.49vw;
+    height: 34.49vw;
+    left: 14.47vw;
+    top: 14vw;
+    border-radius: 50%;
+    
+    background: var(--red);
+    opacity: .58;
+    filter: blur(14.79vw);
+}
+
 .presentation--blue-circle{
     position: absolute;
     width: 34.49vw;
@@ -57,4 +70,16 @@
     
     background: var(--blue);
     filter: blur(14.47vw);
+}
+
+.presentation--yellow-circle{
+    position: absolute;
+    width: 28.36vw;
+    height: 23.67vw;
+    left: 28.36vw;
+    top: -2vw;
+    border-radius: 50%;
+    
+    background: var(--yellow);
+    filter: blur(5.79vw);
 }

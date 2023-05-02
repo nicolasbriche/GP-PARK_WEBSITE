@@ -9,24 +9,36 @@
     background-position: 80% center;
 }
 
-.numbers div{
-    width: 9.72vw;
-    height: 10.42vw;
-    background-color: red;
+.numbers--icon{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.numbers div:nth-child(1){
+.numbers--icon svg{
+    width: 9.72vw;
+}
+
+.numbers--circuit{
     margin-top: 10vw;
 }
 
-.numbers div:nth-child(2){
+.numbers--permis{
     margin-top: 12vw;
 }
 
-.numbers div:nth-child(3){
+.numbers--motorbike{
     margin-top: 16vw;
 }
 
-.numbers div:nth-child(4){
+.numbers--age{
     margin-top: 19vw;
+}
+
+.numbers--description-icon{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.45vw;
 }
