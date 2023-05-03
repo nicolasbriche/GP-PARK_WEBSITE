@@ -1,13 +1,13 @@
 .choice--background{
-   background-image: url(../img/Welcome.png);
-   width: 100vw;
-   height: 100vh;
-   background-size: cover;
-   transition: background-image .2s ease-in-out;
+    background-image: url(../img/Welcome.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    transition: background-image .2s ease-in-out;
+    background-position: center;
 }
 
 .choice--item{
-    color: var(--text-color);
     text-decoration: none;
     font-family: 'Race sport', sans-serif;
     font-size: 6vw;
@@ -16,6 +16,10 @@
     text-align: center;
     position: absolute;
     line-height: 100vh;
+    -webkit-text-stroke: .1vw;
+    -webkit-text-stroke-color: var(--text-color);
+    color: transparent;
+    transition: color .5s ease-in-out;
 }
 
 .choice--loisir{
@@ -26,10 +30,56 @@
     left: 50vw;
 }
 
+.choice--loisir:hover{
+    color: var(--text-color);
+    text-shadow: 0 0 5px var(--blue),
+    0 0 10px var(--blue),
+    0 0 20px var(--blue);
+}
+
+.choice--academy:hover{
+    color: var(--text-color);
+    text-shadow: 0 0 5px var(--yellow),
+    0 0 10px var(--yellow),
+    0 0 20px var(--yellow);
+}
+
 .choice--loisir:hover ~ .choice--background{
     background-image: url(../img/Welcome-loisir.png);
 }
 
 .choice--academy:hover ~ .choice--background{
     background-image: url(../img/Welcome-academy.png);
+}
+
+@media screen and (orientation: portrait){
+    .choice--background{
+        background-image: url(../img/Welcome\ mobile.png);
+    }
+    
+    .choice--loisir:hover ~ .choice--background{
+        background-image: url(../img/Welcome\ mobile\ loisir.png);
+    }
+    
+    .choice--academy:hover ~ .choice--background{
+        background-image: url(../img/Welcome\ mobile\ academy.png);
+    }
+    
+    .choice--item{
+        font-size: 6vw;
+        width: 100vw;
+        height: 50vh;
+        left: 0;
+        font-size: 6vw;
+        color: var(--text-color);
+        line-height: 50vh;
+    }
+    
+    .choice--loisir{
+        top: 0;
+    }
+    
+    .choice--academy{
+        top: 50vh;
+    }
 }
