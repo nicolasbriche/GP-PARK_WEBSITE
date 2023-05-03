@@ -1,81 +1,35 @@
-.choice{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background: linear-gradient(45deg, var(--blue) 0%, var(--background) 40%, var(--dark-background) 50%, var(--background) 60%, var(--red) 100%);
+.choice--background{
+   background-image: url(../img/Welcome.png);
+   width: 100vw;
+   height: 100vh;
+   background-size: cover;
+   transition: background-image .2s ease-in-out;
 }
 
-.choice a{
-    z-index: 10;
-    position: absolute;
+.choice--item{
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Race sport', sans-serif;
+    font-size: 6vw;
     width: 50vw;
     height: 100vh;
-
     text-align: center;
-    
-    font-size: 6.3vw;
-    font-weight: 400;
-    font-family: 'Race Sport', sans-serif;
-    
-    color: var(--text-color);
-    text-shadow: 0px 0px 20px var(--red);
-    text-decoration: none;
-    padding-top: 50vh;
-    line-height: 0;
-}
-
-.loisir, .academy{
-    flex-grow: 1;
-    overflow: visible;
-}
-
-.loisir img{
-    height: 100%;
     position: absolute;
-    top: 0;
+    line-height: 100vh;
+}
+
+.choice--loisir{
     left: 0;
-    filter: grayscale(1);
-    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.academy img{
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    filter: grayscale(10);
-    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+.choice--academy{
+    left: 50vw;
 }
 
-.academy a:hover + img{
-    filter: grayscale(0);
+.choice--loisir:hover ~ .choice--background{
+    background-image: url(../img/Welcome-loisir.png);
 }
 
-.loisir a:hover + img{
-    filter: grayscale(0);
-}
-
-
-
-/* .loisir{
-    background-image: url(../img/loisir.png);
-    background-size: auto 100%;
-    background-position: left center;
-}
-.academy{
-    background-image: url(../img/academy.png);
-    background-size: auto 100%;
-    background-position: right center;
-} */
-
-@media (orientation: landscape){
-    .choice{
-        flex-flow: row nowrap;
-    }
-}
-
-@media (orientation: portrait){
-    .choice{
-        flex-direction: column;
-    }
+.choice--academy:hover ~ .choice--background{
+    background-image: url(../img/Welcome-academy.png);
 }
