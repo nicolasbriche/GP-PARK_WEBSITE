@@ -32,7 +32,7 @@
 }
 
 .pictures--gallery div{
-    height: 100px;
+    height: 200px;
     display: flex;
     flex-flow: row nowrap;
     gap: 25px;
