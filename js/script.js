@@ -45,8 +45,6 @@ document.addEventListener("DOMContentLoaded", function(){
 // Faire les modifs demandées dans sublime texte
 // Mettre le tracé du circuit en background dans horaires
 // Terminer la carte contactez nous
-// Terminer le footer
-// Ajouter les partenaires
 // Faire un point sur le responsive
 
 // Ajouter les meta description pour google (et autres en fonction des recherches)
