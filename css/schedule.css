@@ -4,6 +4,24 @@
     position: relative;
 }
 
+.schedule--background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.schedule--background svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
 .schedule--title{
     font-family: 'Race Sport', sans-serif;
     font-weight: 400;
