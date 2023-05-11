@@ -41,11 +41,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 // Afficher le menu quand on change la taille de l'écran et enlever le blur filter
-// Faire l'écran d'accueil
 // Tracer les bons icones (loisir et academy)
 // Faire les modifs demandées dans sublime texte
 // Mettre le tracé du circuit en background dans horaires
-// Mettre les bonnes photos dans la gallery (loisir et academy)
 // Terminer la carte contactez nous
 // Terminer le footer
 // Ajouter les partenaires
