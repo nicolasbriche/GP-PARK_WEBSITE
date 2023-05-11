@@ -1,7 +1,8 @@
 .partners{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10vw;
     padding: 25px 50px;
     background-color: white
 }
@@ -18,4 +19,15 @@
 
 .partners img{
     height: 100px;
+}
+
+@media screen and (max-width: 900px){
+    .partners{
+        flex-direction: column;
+    }
+
+    .partners img{
+        justify-content: center;
+        margin: auto;
+    }
 }
