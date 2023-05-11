@@ -345,12 +345,80 @@
         flex-flow: row wrap;
     }
 
+    .prices--card{
+        width: 27.345vw;
+        height: 63vw;
+    }
+
+    .card--title{
+        font-size: 2.99vw;
+        margin-top: 1.85vw;
+    }
+
+    .card--explication{
+        font-size: 1.4vw;
+    }
+
+    .card--price p:nth-child(1), .card--price p:nth-child(3){
+        font-size: 1.4vw;
+    }
+
+    .card--price p:nth-child(2){
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+
+    .card--driving-licence{
+        font-size: 2.34vw;
+    }
+    
+    .card--button{
+        width: 12.58vw;
+        height: 4.33vw;
+        
+        border-radius: 5vw;
+        
+        font-size: 1.9vw;
+        
+        margin-left: 7.38vw;
+    }
+
+    .card--table{
+        font-size: 1.9vw;
+        width: 80%;
+    }
+
+    .card--table-caption{
+        font-size: .96vw;
+    }
+
+    .card--include{
+        font-size: 1.41vw;
+    }
+
+    .card--include li{
+        position: relative;
+        margin-left: 1.8vw;
+    }
+    
+    .card--include li::before{
+        top: .3vw;
+        left: -1.8vw;
+        background-size: 1.5vw;
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .card--location{
+        font-size: 1.41vw;
+    }
+    
     .prices--card:nth-child(1), .prices--card:nth-child(3){
-        margin-left: 18vw;
+        margin-left: 14vw;
     }
 
     .prices--card:nth-child(2), .prices--card:nth-child(4){
-        margin-right: 18vw;
+        margin-right: 14vw;
     }
 
     .prices--card:nth-child(1), .prices--card:nth-child(2){
