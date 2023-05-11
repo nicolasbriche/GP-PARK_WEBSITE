@@ -324,6 +324,22 @@
     margin-bottom: .5vw;
 }
 
+.prices--global-details{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.04vw;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.prices--global-details p{
+    margin-bottom: 1vw;
+}
+
+.prices--global-details p span{
+    font-size: 2vw;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1024px){
     .prices--cards-row{
         flex-flow: row wrap;
